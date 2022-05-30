@@ -1,3 +1,11 @@
+// İsim: createDivider
+// Ne yapar: Verilen level parametresine göre
+// html üzerindeki matrisler arasında ayıraç oluşturur
+// Girdi: sayı
+// Çıktı: yok
+// Örnek girdi: yok
+// Örnek çıktı: yok
+
 function createDivider(level) {
     let headerDiv = document.createElement("div");
     let line = document.createElement("hr");

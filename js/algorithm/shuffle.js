@@ -1,3 +1,11 @@
+// Dosya: shuffle.js
+// İsim: shuffle
+// Ne yapar: Parametre olarak verilen 
+// Girdi:
+// Çıktı:
+// Örnek girdi:
+// Örnek çıktı:
+
 // Verilen matris(matrix), komşu elemanlar(adjacent)
 // ve boş hücrenin koordinatlarını(empty) alıp çocuk matrisleri yarat
 function shuffle(matrix, adjacent, empty) {

@@ -1,3 +1,25 @@
+// Dosya: hval.js
+// İsim: getHVal
+// Ne yapar: Parametre olarak bir matris ve hedef matrisini
+// alarak manhattan distance kullanarak matrisin H değerini hesaplar
+// Girdi: 3x3 matris, 3x3 matris
+// Çıktı: sayı
+// Örnek girdi: 
+//   matrixA:
+//   [ 
+//     ['1', '2', '3'],
+//     ['4', '', '5'],
+//     ['6', '7', '8']
+//   ]
+//   matrixB: 
+//   [
+//     ['1', '2', '3'], 
+//     ['4', '5', '6'],
+//     ['7', '8', '']
+//   ]
+//
+// Örnek çıktı: 6
+
 // Verilen bir matris(matrix) hedef matrisi
 // kullanarak h değerini döndür
 function getHVal(matrix, goal_matrix) {
@@ -10,7 +32,7 @@ function getHVal(matrix, goal_matrix) {
     });
     elements = elements.flat();
 
-    // remove the '' element
+    // '' elementini çıkar
     elements.splice(elements.indexOf(''), 1);
     elements.forEach(char => {
         for (let i = 0; i < 3; i++) {

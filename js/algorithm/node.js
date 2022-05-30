@@ -1,4 +1,5 @@
-// Düğüm yapısı
+// Dosya: node.js
+// MyNode yapısı
 class MyNode {
     constructor(matrix, fval, gval, hval, chosen) {
         this.matrix = matrix;

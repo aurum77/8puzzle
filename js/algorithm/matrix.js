@@ -1,4 +1,19 @@
-// elementId'si verilen elementten matris yarat
+// Dosya: matrix.js
+// İsim: getMatrix
+// Ne yapar: Parametre olarak elementId'si verilen 
+// html tablo elementinden veri alıp bir matris yaratır
+// Girdi: string
+// Çıktı: 3x3 matrix
+// Örnek girdi:
+//   elementId: "init_matrix"
+//
+// Örnek çıktı: 
+//   [
+//     ['1', '2', '3'],
+//     ['4', '5', '6'],
+//     ['7', '8', '']
+//   ]
+
 function getMatrix(elementId) {
     let matrix = [[], [], []]
     for (let i = 1; i < 4; i++) {

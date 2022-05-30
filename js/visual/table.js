@@ -1,4 +1,11 @@
-// function createTable(matrix, depth, heuristic) {
+// İsim: createTable
+// Ne yapar: Bir MyNode objesi alarak html üzerinde 
+// matris tablosu yaratır ve nodes div elementine ekler
+// Girdi: MyNode objesi
+// Çıktı: yok
+// Örnek girdi: yok
+// Örnek çıktı: yok
+
 function createTable(node) {
     let table = document.createElement("table");
     let tableDiv = document.createElement("div");

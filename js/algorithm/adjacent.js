@@ -1,29 +1,54 @@
-// Boş elemana komşu olan sayıları döndür
+// Dosya: adjacent.js
+// İsim: getAdjacent
+// Ne yapar: Boş elemana komşu olan sayıların
+// koordinatlarını döndürür
+// Girdi: 3x3 matris
+// Çıktı: Komşu karoların koordinatlarının 
+// bulunduğu json objeleri bulunduran bir liste
+// Örnek girdi: 
+//   matrix:
+//   [
+//     ['1', '2', '3'],
+//     ['4', '5', '6'],
+//     ['7', '8', '']
+//   ]
+//
+// Örnek çıktı:
+//   [ 
+//     { "coordinates": { "i": 2, "j": 1 } },
+//     { "coordinates": { "i": 1, "j": 2 } }
+//   ]
+
 function getAdjacent(matrix) {
+    // Boş karonun indislerini bul
     let indices = getEmpty(matrix);
 
-    let left, right, top, bottom;
+    let top, bottom, left, right;
 
+    // karonun yukarısındaki karonun koordinatlarını almaya çalış
     if (matrix[indices['i']][indices['j'] - 1]) {
-        left = { 'val': matrix[indices['i']][indices['j'] - 1], 'coordinates': { 'i': indices['i'], 'j': indices['j'] - 1 } };
-
+        top = { 'coordinates': { 'i': indices['i'], 'j': indices['j'] - 1 } };
     }
 
+    // karonun altındaki karonun koordinatlarını almaya çalış
     if (matrix[indices['i']][indices['j'] + 1]) {
-        right = { 'val': matrix[indices['i']][indices['j'] + 1], 'coordinates': { 'i': indices['i'], 'j': indices['j'] + 1 } };
+        bottom = { 'coordinates': { 'i': indices['i'], 'j': indices['j'] + 1 } };
     }
 
+    // karonun solunaki karonun koordinatlarını almaya çalış
     if (matrix[indices['i'] - 1] != undefined) {
-        bottom = { 'val': matrix[indices['i'] - 1][indices['j']], 'coordinates': { 'i': indices['i'] - 1, 'j': indices['j'] } };
+        left = { 'coordinates': { 'i': indices['i'] - 1, 'j': indices['j'] } };
     }
 
+    // karonun sağındaki karonun koordinatlarını almaya çalış
     if (matrix[indices['i'] + 1] != undefined) {
-        top = { 'val': matrix[indices['i'] + 1][indices['j']], 'coordinates': { 'i': indices['i'] + 1, 'j': indices['j'] } };
+        right = { 'coordinates': { 'i': indices['i'] + 1, 'j': indices['j'] } };
     }
 
-    let items = [left, right, bottom, top];
+    let items = [top, bottom, left, right];
     let adjacent = [];
 
+    // Undefined olmayan elemanları adjacent dizisine ekle
     items.forEach(item => {
         if (item !== undefined) {
             adjacent.push(item);

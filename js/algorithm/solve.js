@@ -1,5 +1,15 @@
-// Başlangıç(init_matrix) ve Hedef matrisi(goal_matrix) kullanarak
-// başlangıç matrisi'nden hedef matrise en ucuz şekilde nasıl gidilebileceğini hesapla
+// Dosya: solve.js
+// İsim: solve
+// Ne yapar: Parametre olarak verilen init ve goal matrisleri alır
+// ve yardımcı fonksiyonları kullanarak a* algoritmasını uygulayarak 
+// init matrisinin durumundan goal matrisinin durumuna en kısa yolu
+// hesaplar ve bunu html DOM manipülasyonu ile görsele döker
+// manipülasyonu kullanrak görselleştirir
+// Girdi: 3x3 matris, 3x3 matris
+// Çıktı: yok
+// Örnek girdi: 
+// Örnek çıktı: yok
+
 function solve(init_matrix, goal_matrix) {
     // zaman sayaci
     let calculationStart = new Date();
