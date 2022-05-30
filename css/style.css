@@ -1,0 +1,49 @@
+#input {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#nodes {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.input_matrix {
+  padding: 30px;
+  text-align: center;
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+div.node {
+  border-collapse: collapse;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.node table {
+  border-collapse: collapse;
+}
+
+.divident {
+  margin-right: 95%;
+}
+
+button {
+  margin-top: 15px
+}
+
+input {
+  width: 15px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid;
+  padding: 15px;
+}
+
+th {
+  padding: 5px;
+}

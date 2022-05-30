@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <script src="js/main.js"></script>
+    <script src="js/visual/table.js"></script>
+    <script src="js/visual/divider.js"></script>
+    <script src="js/visual/visualize.js"></script>
+    <script src="js/visual/clean.js"></script>
+    <script src="js/algorithm/matrix.js"></script>
+    <script src="js/algorithm/adjacent.js"></script>
+    <script src="js/algorithm/empty.js"></script>
+    <script src="js/algorithm/shuffle.js"></script>
+    <script src="js/algorithm/node.js"></script>
+    <script src="js/algorithm/hval.js"></script>
+    <script src="js/algorithm/solve.js"></script>
+    <script src="js/algorithm/generate.js"></script>
+    <script src="js/algorithm/compare.js"></script>
+    <script src="js/algorithm/stats.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="input">
+        <br>
+        <table class="input_matrix" id="init_matrix">
+            <tr>
+                <th colspan="3">
+                    Başlangıç Matrisi
+                </th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <table class="input_matrix" id="goal_matrix">
+            <tr>
+                <th colspan="3">
+                    Hedef Matrisi
+                </th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <div>
+            <button onclick="main()">a* algoritması ile en kısa yolu hesapla</button>
+        </div>
+        <br>
+        <div id="nodesContainer">
+            <div id="nodes"></div>
+        </div>
+
+    </div> <!-- main div -->
+</body>
+
+</html>
