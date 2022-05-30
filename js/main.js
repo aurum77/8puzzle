@@ -1,5 +1,7 @@
+// Dosya: main.js
 // İsim: main
-// Ne yapar: solve fonksiyonunu çağırır
+// Ne yapar: solve fonksiyonunu başlangıç ve hedef
+// matrisleri parametreleriyle çağırır
 // Girdi: yok
 // Çıktı: yok
 // Örnek girdi: yok

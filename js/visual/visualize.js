@@ -1,3 +1,4 @@
+// Dosya: visualize.js
 // İsim: visualize
 // Ne yapar: Parametre olarak bir MyNode listesi olan nodeArray'i alır ve 
 // yardımcı fonksiyonları kullanarak bu listeyi görselleştirir

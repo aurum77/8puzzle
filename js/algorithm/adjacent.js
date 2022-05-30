@@ -1,6 +1,6 @@
 // Dosya: adjacent.js
 // İsim: getAdjacent
-// Ne yapar: Boş elemana komşu olan sayıların
+// Ne yapar: Boş elemana komşu olan karoların
 // koordinatlarını döndürür
 // Girdi: 3x3 matris
 // Çıktı: Komşu karoların koordinatlarının 
