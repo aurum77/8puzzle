@@ -19,8 +19,6 @@ function solve(init_matrix, goal_matrix) {
     let gval = 0;
     // rootNode'u en ucuz olarak alalım
     let cheapestNode = rootNode;
-    // ilk karıştırılmış matrisleri yarat
-    let counter = 0;
     // 1=başarılı, -1=başarısız (ulaşılabilecek tüm düğümler ulaşıldı)
     let status = 0;
 
@@ -65,14 +63,9 @@ function solve(init_matrix, goal_matrix) {
 
         cheapestNode.chosen = 1;
 
-        if (counter == 1000) {
-            break;
-        }
-
         if (status != 0) {
             break;
         }
-        counter++;
     }
     const calculationEnd = new Date();
 
